@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Website Kami</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Navigasi -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-blue-600">Logo</div>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-blue-600">About</a></li>
+                    <li><a href="layanan.html" class="text-gray-700 hover:text-blue-600">Layanan Kami</a></li>
+                    <li><a href="blog.html" class="text-gray-700 hover:text-blue-600">Blog</a></li>
+                    <li><a href="kontak.html" class="text-gray-700 hover:text-blue-600">Kontak</a></li>
+                </ul>
+                <button class="md:hidden text-gray-700">Menu</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Hubungi Kami</h1>
+            <p class="text-xl mb-8">Kami siap membantu Anda.</p>
+
+            <!-- GAMBAR HERO -->
+            <img 
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1000&q=80" 
+                alt="Contact Team"
+                class="mx-auto rounded-xl shadow-lg"
+            >
+        </div>
+    </section>
+
+    <!-- Konten Utama -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- Form -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Kirim Pesan</h2>
+
+                    <!-- GAMBAR FORM -->
+                    <img 
+                        src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" 
+                        alt="Send Message"
+                        class="rounded-lg mb-6"
+                    >
+
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium">Nama</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-600">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium">Email</label>
+                            <input type="email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-600">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium">Pesan</label>
+                            <textarea class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-600" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold">
+                            Kirim
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Info Kontak -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Informasi Kontak</h2>
+
+                    <p class="mb-4"><strong>Alamat:</strong> Jl. Contoh No. 123, Kota, Negara</p>
+                    <p class="mb-4"><strong>Telepon:</strong> +62 123 456 789</p>
+                    <p class="mb-4"><strong>Email:</strong> info@websitekami.com</p>
+
+                    <!-- GAMBAR MAP -->
+                    <img 
+                        src="https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=800&q=80" 
+                        alt="Location Map"
+                        class="rounded-lg mt-6"
+                    >
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2026 Website Kami. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
