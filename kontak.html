@@ -1,106 +1,216 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak - Website Kami</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - WebsiteKami</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-black text-white font-sans">
 
-    <!-- Navigasi -->
-    <nav class="bg-black shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div class="text-2xl font-bold text-green-600">Logo</div>
-                <ul class="hidden md:flex space-x-8">
-                    <li><a href="index.html" class="text-white hover:text-green-600">Home</a></li>
-                    <li><a href="about.html" class="text-white hover:text-green-600">About</a></li>
-                    <li><a href="layanan.html" class="text-white hover:text-green-600">Layanan Kami</a></li>
-                    <li><a href="blog.html" class="text-white hover:text-green-600">Blog</a></li>
-                    <li><a href="kontak.html" class="text-white hover:text-green-600 font-semibold">Kontak</a></li>
-                </ul>
-                <button class="md:hidden text-white">Menu</button>
-            </div>
-        </div>
-    </nav>
+<!-- NAVBAR -->
+<nav class="bg-black/80 backdrop-blur shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold text-green-500">WebsiteKami</div>
+    <ul class="hidden md:flex space-x-8">
+      <li><a href="index.html" class="hover:text-green-500">Home</a></li>
+      <li><a href="about.html" class="hover:text-green-500">About</a></li>
+      <li><a href="layanan.html" class="hover:text-green-500">Layanan</a></li>
+      <li><a href="blog.html" class="hover:text-green-500">Blog</a></li>
+      <li><a href="kontak.html" class="text-green-500 font-semibold">Kontak</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-green-600 to-green-800 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">Hubungi Kami</h1>
-            <p class="text-xl mb-8">Kami siap membantu Anda.</p>
+<!-- HERO KONTAK (JANGAN DIUBAH) -->
+<section class="relative bg-black overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,197,94,0.30),transparent_55%)]"></div>
 
-            <!-- GAMBAR HERO -->
-            <img 
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1000&q=80" 
-                alt="Contact Team"
-                class="mx-auto rounded-xl shadow-lg"
+  <div class="relative max-w-7xl mx-auto px-6 py-32 text-center">
+    <span class="inline-block mb-4 px-4 py-1 rounded-full bg-green-500/10 text-green-400 text-sm font-semibold">
+      Hubungi Kami
+    </span>
+
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
+      Siap Diskusi & <span class="text-green-500">Kolaborasi</span>
+    </h1>
+
+    <p class="text-gray-300 max-w-2xl mx-auto text-lg">
+      Punya pertanyaan atau butuh solusi digital?
+      Tim kami siap membantu kamu berkembang.
+    </p>
+  </div>
+</section>
+
+<!-- KONTEN UTAMA (DIRAPIHIN) -->
+<section class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+      <!-- FORM KONTAK -->
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Kirim Pesan</h2>
+        <p class="text-gray-400 mb-8">
+          Isi form di bawah ini, kami akan membalas secepat mungkin.
+        </p>
+
+        <img 
+          src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" 
+          alt="Send Message"
+          class="rounded-2xl mb-8"
+        >
+
+        <form class="space-y-5">
+          <div>
+            <label class="block text-sm mb-2">Nama Lengkap</label>
+            <input 
+              type="text"
+              placeholder="Masukkan nama"
+              class="w-full px-4 py-3 rounded-xl bg-gray-900 border border-gray-700 focus:ring-2 focus:ring-green-500 outline-none"
             >
+          </div>
+
+          <div>
+            <label class="block text-sm mb-2">Email</label>
+            <input 
+              type="email"
+              placeholder="contoh@email.com"
+              class="w-full px-4 py-3 rounded-xl bg-gray-900 border border-gray-700 focus:ring-2 focus:ring-green-500 outline-none"
+            >
+          </div>
+
+          <div>
+            <label class="block text-sm mb-2">Pesan</label>
+            <textarea 
+              rows="5"
+              placeholder="Tulis pesan kamu di sini..."
+              class="w-full px-4 py-3 rounded-xl bg-gray-900 border border-gray-700 focus:ring-2 focus:ring-green-500 outline-none"
+            ></textarea>
+          </div>
+
+          <button 
+            type="submit"
+            class="bg-green-600 hover:bg-green-700 transition px-10 py-3 rounded-xl font-semibold"
+          >
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+
+      <!-- INFO KONTAK -->
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Informasi Kontak</h2>
+        <p class="text-gray-400 mb-8">
+          Kamu juga bisa menghubungi kami lewat informasi di bawah ini.
+        </p>
+
+        <div class="space-y-4 text-gray-300 mb-10">
+          <p>
+            <span class="text-white font-semibold">Alamat:</span><br>
+            Jl. Contoh No. 123, Kota Indonesia
+          </p>
+          <p>
+            <span class="text-white font-semibold">Telepon:</span><br>
+            +62 123 456 789
+          </p>
+          <p>
+            <span class="text-white font-semibold">Email:</span><br>
+            info@websitekami.com
+          </p>
         </div>
-    </section>
 
-    <!-- Konten Utama -->
-    <section class="py-16 bg-black">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-8">
+        <img 
+          src="https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=800&q=80" 
+          alt="Lokasi"
+          class="rounded-2xl"
+        >
+      </div>
 
-                <!-- Form -->
-                <div>
-                    <h2 class="text-3xl font-bold mb-8">Kirim Pesan</h2>
+    </div>
+  </div>
+</section>
 
-                    <!-- GAMBAR FORM -->
-                    <img 
-                        src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" 
-                        alt="Send Message"
-                        class="rounded-lg mb-6"
-                    >
+<!-- CTA FOOTER (JANGAN DIUBAH) -->
+<section class="py-20 bg-gradient-to-r from-green-600 to-green-700 text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">
+    Siap Mulai Project Bersama Kami?
+  </h2>
+  <p class="text-white/90 mb-8 text-lg">
+    Konsultasi gratis dan respon cepat dari tim profesional
+  </p>
 
-                    <form class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-medium">Nama</label>
-                            <input type="text" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600 bg-gray-700 text-white">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium">Email</label>
-                            <input type="email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600 bg-gray-700 text-white">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium">Pesan</label>
-                            <textarea class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-600 bg-gray-700 text-white" rows="5"></textarea>
-                        </div>
-                        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold">
-                            Kirim
-                        </button>
-                    </form>
-                </div>
+  <div class="flex justify-center gap-4 flex-wrap">
+    <a href="kontak.html"
+      class="bg-white text-green-700 px-8 py-3 rounded-xl font-semibold shadow-lg">
+      Hubungi Sekarang
+    </a>
+    <a href="index.html"
+      class="border border-white px-8 py-3 rounded-xl font-semibold">
+      Kembali ke Home
+    </a>
+  </div>
+</section>
 
-                <!-- Info Kontak -->
-                <div>
-                    <h2 class="text-3xl font-bold mb-8">Informasi Kontak</h2>
+<!-- FOOTER -->
+<footer class="bg-black text-gray-400 pt-20 pb-10">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
 
-                    <p class="mb-4"><strong>Alamat:</strong> Jl. Contoh No. 123, Kota, Negara</p>
-                    <p class="mb-4"><strong>Telepon:</strong> +62 123 456 789</p>
-                    <p class="mb-4"><strong>Email:</strong> info@websitekami.com</p>
+    <!-- Brand -->
+    <div>
+      <h3 class="text-xl font-bold text-green-500 mb-4">WebsiteKami</h3>
+      <p class="text-sm mb-6">
+        Solusi digital untuk pelajar, UMKM, dan personal brand.
+      </p>
 
-                    <!-- GAMBAR MAP -->
-                    <img 
-                        src="https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=800&q=80" 
-                        alt="Location Map"
-                        class="rounded-lg mt-6"
-                    >
-                </div>
+      <form class="flex bg-gray-900 rounded-full overflow-hidden">
+        <input type="email" placeholder="Email address"
+               class="bg-transparent px-4 py-2 text-sm w-full outline-none">
+        <button class="bg-green-600 px-5 text-white text-sm font-semibold">
+          Subscribe
+        </button>
+      </form>
+    </div>
 
-            </div>
-        </div>
-    </section>
+    <!-- Pages -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Pages</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="about.html" class="hover:text-green-500">About</a></li>
+        <li><a href="blog.html" class="hover:text-green-500">Blog</a></li>
+        <li><a href="layanan.html" class="hover:text-green-500">Services</a></li>
+        <li><a href="kontak.html" class="hover:text-green-500">Contact</a></li>
+      </ul>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2026 Website Kami. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- Services -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Services</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Web Development</li>
+        <li>Digital Marketing</li>
+        <li>Personal Branding</li>
+        <li>Content Strategy</li>
+      </ul>
+    </div>
 
-</body>
-</html>
+    <!-- Contact -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Contact</h4>
+      <p class="text-sm mb-2">hello@websitekami.com</p>
+      <p class="text-sm mb-4">+62 812-3456-7890</p>
+
+      <div class="flex gap-4 text-lg">
+        <a href="#" class="hover:text-green-500">🌐</a>
+        <a href="#" class="hover:text-green-500">📘</a>
+        <a href="#" class="hover:text-green-500">📸</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="border-t border-white/10 mt-16 pt-6 text-center text-sm">
+    © 2026 WebsiteKami. All rights reserved.
+  </div>
+</footer>
