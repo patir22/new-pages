@@ -5,116 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - WebsiteKami</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    function toggleMenu() {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    }
-  </script>
 </head>
 
 <body class="bg-black text-white font-sans">
 
 <!-- NAVIGASI -->
-<nav class="bg-black shadow-md sticky top-0 z-50">
+<nav class="bg-black/80 backdrop-blur shadow-md sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="text-2xl font-bold text-green-600">WebsiteKami</div>
-
+    <div class="text-2xl font-bold text-green-500">WebsiteKami</div>
     <ul class="hidden md:flex space-x-8">
-      <li><a href="index.html" class="hover:text-green-600">Home</a></li>
-      <li><a href="about.html" class="text-green-600 font-semibold">About</a></li>
-      <li><a href="layanan.html" class="hover:text-green-600">Layanan Kami</a></li>
-      <li><a href="blog.html" class="hover:text-green-600">Blog</a></li>
-      <li><a href="kontak.html" class="hover:text-green-600">Kontak</a></li>
+      <li><a href="index.html" class="hover:text-green-500">Home</a></li>
+      <li><a href="about.html" class="text-green-500 font-semibold">About</a></li>
+      <li><a href="layanan.html" class="hover:text-green-500">Layanan</a></li>
+      <li><a href="blog.html" class="hover:text-green-500">Blog</a></li>
+      <li><a href="kontak.html" class="hover:text-green-500">Kontak</a></li>
     </ul>
-
-    <button class="md:hidden" onclick="toggleMenu()">☰</button>
   </div>
-
-  <!-- MOBILE MENU -->
-  <ul id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2 bg-black">
-    <li><a href="index.html" class="block">Home</a></li>
-    <li><a href="about.html" class="block font-semibold text-green-600">About</a></li>
-    <li><a href="layanan.html" class="block">Layanan Kami</a></li>
-    <li><a href="blog.html" class="block">Blog</a></li>
-    <li><a href="kontak.html" class="block">Kontak</a></li>
-  </ul>
 </nav>
 
-<!-- HERO -->
-<section class="bg-gradient-to-r from-green-600 to-green-800 text-white py-24 text-center">
-  <h1 class="text-4xl md:text-6xl font-bold mb-4">
-    Tentang WebsiteKami
-  </h1>
-  <p class="text-xl max-w-3xl mx-auto">
-    Partner digital terpercaya untuk membangun solusi modern, kreatif, dan berdampak
-  </p>
+<!-- HERO ABOUT -->
+<section class="relative bg-black overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,197,94,0.30),transparent_55%)]"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 py-32 text-center">
+    <span class="inline-block mb-4 px-4 py-1 rounded-full bg-green-500/10 text-green-400 text-sm font-semibold">
+      Tentang Kami
+    </span>
+
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
+      Membantu Kamu <span class="text-green-500">Tumbuh di Dunia Digital</span>
+    </h1>
+
+    <p class="text-gray-300 max-w-2xl mx-auto text-lg">
+      WebsiteKami hadir sebagai platform edukasi dan layanan digital
+      untuk pelajar, UMKM, dan personal brand yang ingin tampil profesional.
+    </p>
+  </div>
 </section>
 
 <!-- TENTANG KAMI -->
-<section class="py-16 bg-black">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+<section class="py-20 bg-black">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
     <div>
-      <h2 class="text-3xl font-bold mb-4">Siapa Kami?</h2>
-      <p class="mb-4">
-        WebsiteKami adalah platform digital yang berfokus pada pengembangan website,
-        edukasi teknologi, event, dan konsultasi digital. Kami hadir untuk membantu
-        individu, pelajar, dan bisnis membangun kehadiran digital yang kuat.
+      <h2 class="text-3xl font-bold mb-6">
+        Siapa Kami?
+      </h2>
+      <p class="text-gray-300 mb-4">
+        WebsiteKami adalah platform digital yang berfokus pada pengembangan
+        website, edukasi teknologi, event, dan konsultasi digital.
       </p>
-      <p>
-        Dengan pendekatan profesional dan teknologi terkini, kami berkomitmen
-        memberikan solusi yang relevan, efektif, dan berorientasi pada hasil.
+      <p class="text-gray-400">
+        Kami membantu pelajar, individu, dan UMKM membangun kehadiran
+        digital yang profesional dan berkelanjutan.
       </p>
     </div>
-    <img src="https://picsum.photos/600/400?random=21" class="rounded-lg shadow">
+
+    <img src="https://picsum.photos/600/400?random=21"
+         class="rounded-xl shadow-lg object-cover w-full">
   </div>
 </section>
 
 <!-- VISI MISI -->
-<section class="py-16 bg-gray-100 text-black">
+<section class="py-20 bg-gray-100 text-gray-900">
   <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">Visi & Misi</h2>
+    <h2 class="text-3xl font-bold text-center mb-14">
+      Visi & Misi
+    </h2>
 
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold mb-3 text-green-600">Visi</h3>
-        <p>
-          Menjadi platform digital terpercaya yang mendorong inovasi,
-          edukasi, dan pertumbuhan teknologi di Indonesia.
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="bg-white rounded-xl p-8 shadow-md">
+        <h3 class="text-xl font-semibold text-green-600 mb-3">Visi</h3>
+        <p class="text-gray-600">
+          Menjadi platform digital terpercaya yang mendorong
+          inovasi, edukasi, dan pertumbuhan teknologi di Indonesia.
         </p>
       </div>
 
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold mb-3 text-green-600">Misi</h3>
-        <ul class="list-disc ml-5 space-y-2">
-          <li>Menyediakan layanan digital berkualitas tinggi</li>
-          <li>Menghadirkan edukasi yang relevan dan aplikatif</li>
-          <li>Membangun komunitas digital yang produktif</li>
+      <div class="bg-white rounded-xl p-8 shadow-md">
+        <h3 class="text-xl font-semibold text-green-600 mb-3">Misi</h3>
+        <ul class="list-disc ml-5 space-y-2 text-gray-600">
+          <li>Menyediakan layanan digital berkualitas</li>
+          <li>Mengedukasi dengan materi aplikatif</li>
+          <li>Membangun komunitas digital produktif</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TIM KAMI -->
-<section class="py-16 bg-black">
+<!-- TIM -->
+<section class="py-20 bg-black">
   <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">Tim Kami</h2>
+    <h2 class="text-3xl font-bold text-center mb-14">
+      Tim Kami
+    </h2>
 
-    <div class="grid md:grid-cols-3 gap-8 text-center">
-      <div>
-        <img src="https://picsum.photos/200/200?random=31" class="mx-auto rounded-full mb-4">
+    <div class="grid md:grid-cols-3 gap-10 text-center">
+      <div class="bg-gray-900 p-8 rounded-xl">
+        <img src="https://picsum.photos/200/200?random=31"
+             class="mx-auto rounded-full mb-4">
         <h3 class="font-semibold text-xl">Andi Pratama</h3>
         <p class="text-gray-400">Founder & CEO</p>
       </div>
 
-      <div>
-        <img src="https://picsum.photos/200/200?random=32" class="mx-auto rounded-full mb-4">
+      <div class="bg-gray-900 p-8 rounded-xl">
+        <img src="https://picsum.photos/200/200?random=32"
+             class="mx-auto rounded-full mb-4">
         <h3 class="font-semibold text-xl">Siti Aulia</h3>
-        <p class="text-gray-400">Chief Technology Officer</p>
+        <p class="text-gray-400">CTO</p>
       </div>
 
-      <div>
-        <img src="https://picsum.photos/200/200?random=33" class="mx-auto rounded-full mb-4">
+      <div class="bg-gray-900 p-8 rounded-xl">
+        <img src="https://picsum.photos/200/200?random=33"
+             class="mx-auto rounded-full mb-4">
         <h3 class="font-semibold text-xl">Budi Santoso</h3>
         <p class="text-gray-400">Project Manager</p>
       </div>
@@ -122,39 +125,95 @@
   </div>
 </section>
 
-<!-- GALLERY (DIUBAH JADI HIJAU) -->
-<section class="py-16 bg-green-600">
+<!-- GALERI -->
+<section class="py-20 bg-black">
   <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center text-white mb-10">
+    <h2 class="text-3xl font-bold text-center mb-14">
       Galeri Aktivitas
     </h2>
 
-    <div class="grid md:grid-cols-4 gap-4">
-      <img src="https://picsum.photos/300/200?random=41" class="rounded-lg shadow-lg">
-      <img src="https://picsum.photos/300/200?random=42" class="rounded-lg shadow-lg">
-      <img src="https://picsum.photos/300/200?random=43" class="rounded-lg shadow-lg">
-      <img src="https://picsum.photos/300/200?random=44" class="rounded-lg shadow-lg">
+    <div class="grid md:grid-cols-4 gap-6">
+      <img src="https://picsum.photos/300/200?random=41" class="rounded-xl">
+      <img src="https://picsum.photos/300/200?random=42" class="rounded-xl">
+      <img src="https://picsum.photos/300/200?random=43" class="rounded-xl">
+      <img src="https://picsum.photos/300/200?random=44" class="rounded-xl">
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="py-16 bg-green-700 text-white text-center">
-  <h2 class="text-3xl font-bold mb-4">
-    Ingin Tahu Lebih Lanjut?
+<section class="py-20 bg-gradient-to-r from-green-600 to-green-700 text-white text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">
+    Tertarik Kolaborasi dengan Kami?
   </h2>
-  <p class="mb-6">
-    Hubungi kami dan mulai kolaborasi digital bersama tim profesional
+  <p class="mb-8 text-white/90 text-lg">
+    Mari bangun solusi digital yang berdampak bersama WebsiteKami.
   </p>
-  <a href="kontak.html" class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg font-semibold">
+
+  <a href="kontak.html"
+     class="bg-white text-green-700 px-8 py-3 rounded-xl font-semibold shadow-lg">
     Hubungi Kami
   </a>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-gray-800 text-white py-8 text-center">
-  <p>© 2026 WebsiteKami. All rights reserved.</p>
-</footer>
+<footer class="bg-black text-gray-400 pt-20 pb-10">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
 
-</body>
-</html>
+    <!-- Brand -->
+    <div>
+      <h3 class="text-xl font-bold text-green-500 mb-4">WebsiteKami</h3>
+      <p class="text-sm mb-6">
+        Solusi digital untuk pelajar, UMKM, dan personal brand.
+      </p>
+
+      <form class="flex bg-gray-900 rounded-full overflow-hidden">
+        <input type="email" placeholder="Email address"
+               class="bg-transparent px-4 py-2 text-sm w-full outline-none">
+        <button class="bg-green-600 px-5 text-white text-sm font-semibold">
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+    <!-- Pages -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Pages</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="about.html" class="hover:text-green-500">About</a></li>
+        <li><a href="blog.html" class="hover:text-green-500">Blog</a></li>
+        <li><a href="layanan.html" class="hover:text-green-500">Services</a></li>
+        <li><a href="kontak.html" class="hover:text-green-500">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Services</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Web Development</li>
+        <li>Digital Marketing</li>
+        <li>Personal Branding</li>
+        <li>Content Strategy</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Contact</h4>
+      <p class="text-sm mb-2">hello@websitekami.com</p>
+      <p class="text-sm mb-4">+62 812-3456-7890</p>
+
+      <div class="flex gap-4 text-lg">
+        <a href="#" class="hover:text-green-500">🌐</a>
+        <a href="#" class="hover:text-green-500">📘</a>
+        <a href="#" class="hover:text-green-500">📸</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="border-t border-white/10 mt-16 pt-6 text-center text-sm">
+    © 2026 WebsiteKami. All rights reserved.
+  </div>
+</footer>
