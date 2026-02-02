@@ -9,171 +9,205 @@
 
 <body class="bg-black text-white font-sans">
 
-<!-- NAVIGASI -->
-<nav class="bg-black shadow-md sticky top-0 z-50">
+<!-- NAVBAR (SAMA KAYAK INDEX) -->
+<nav class="bg-black/80 backdrop-blur shadow-md sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="text-2xl font-bold text-green-600">WebsiteKami</div>
+    <div class="text-2xl font-bold text-green-500">WebsiteKami</div>
     <ul class="hidden md:flex space-x-8">
-      <li><a href="index.html" class="hover:text-green-600">Home</a></li>
-      <li><a href="about.html" class="hover:text-green-600">About</a></li>
-      <li><a href="layanan.html" class="hover:text-green-600">Layanan Kami</a></li>
-      <li><a href="blog.html" class="text-green-600 font-semibold">Blog</a></li>
-      <li><a href="kontak.html" class="hover:text-green-600">Kontak</a></li>
+      <li><a href="index.html" class="hover:text-green-500">Home</a></li>
+      <li><a href="about.html" class="hover:text-green-500">About</a></li>
+      <li><a href="layanan.html" class="hover:text-green-500">Layanan</a></li>
+      <li><a href="blog.html" class="text-green-500 font-semibold">Blog</a></li>
+      <li><a href="kontak.html" class="hover:text-green-500">Kontak</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="bg-gradient-to-r from-green-600 to-green-800 text-white py-24 text-center">
-  <h1 class="text-4xl md:text-6xl font-bold mb-4">
-    Blog & Insight Digital
-  </h1>
-  <p class="text-xl max-w-3xl mx-auto">
-    Temukan artikel, tips, dan wawasan terbaru seputar teknologi,
-    pengembangan diri, dan dunia digital modern
-  </p>
+<!-- HERO BLOG -->
+<section class="relative bg-black overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,197,94,0.30),transparent_55%)]"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 py-32 text-center">
+    <span class="inline-block mb-4 px-4 py-1 rounded-full bg-green-500/10 text-green-400 text-sm font-semibold">
+      Artikel & Insight
+    </span>
+
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
+      Belajar Digital <span class="text-green-500">Tanpa Ribet</span>
+    </h1>
+
+    <p class="text-gray-300 max-w-2xl mx-auto text-lg">
+      Kumpulan artikel seputar web development, digital marketing,
+      dan personal branding yang relevan dan mudah dipahami.
+    </p>
+  </div>
 </section>
 
-<!-- FEATURED ARTICLE -->
-<section class="py-16 bg-black">
+<!-- FEATURED ARTICLE (LAYOUT TETAP) -->
+<section class="py-16">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-    <img src="https://picsum.photos/600/400?random=61" class="rounded-lg shadow">
+    <img src="https://picsum.photos/600/400?random=61" class="rounded-xl shadow-lg">
     <div>
-      <span class="text-green-600 font-semibold">Featured Article</span>
-      <h2 class="text-3xl font-bold mb-4">
+      <span class="text-green-500 font-semibold">Featured Article</span>
+      <h2 class="text-3xl font-bold mt-2 mb-4">
         Pentingnya Skill Digital di Era Modern
       </h2>
-      <p class="mb-4 text-gray-300">
-        Perkembangan teknologi yang cepat menuntut setiap individu
-        untuk memiliki skill digital. Mulai dari pelajar hingga
-        profesional, kemampuan ini menjadi kunci untuk tetap relevan
-        dan kompetitif.
+      <p class="text-gray-400 mb-4">
+        Skill digital kini jadi kebutuhan utama untuk pelajar,
+        profesional, dan personal brand agar tetap relevan.
       </p>
-      <a href="#" class="text-green-600 font-semibold hover:underline">
+      <a href="#" class="text-green-500 font-semibold hover:underline">
         Baca Selengkapnya →
       </a>
     </div>
   </div>
 </section>
 
-<!-- ARTICLE CATALOG -->
-<section class="py-16 bg-gray-100 text-black">
+<!-- ARTICLE GRID (CARD STYLE INDEX) -->
+<section class="py-16">
   <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">
+    <h2 class="text-3xl font-bold text-center mb-14">
       Artikel Terbaru
     </h2>
 
-    <div class="grid md:grid-cols-3 gap-8">
-      <!-- ARTICLE 1 -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <img src="https://picsum.photos/300/200?random=62" class="rounded mb-4">
-        <h3 class="text-xl font-semibold mb-2">
-          Tips Membuat Website Modern
-        </h3>
-        <p class="mb-4 text-gray-700">
-          Pelajari cara membuat website yang modern, responsif,
-          dan terlihat profesional dengan desain yang clean.
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- CARD -->
+      <div class="bg-gray-900 rounded-xl p-6 hover:shadow-xl hover:scale-[1.02] transition">
+        <img src="https://picsum.photos/300/200?random=62" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Tips Membuat Website Modern</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          Panduan membuat website profesional dengan desain clean.
         </p>
-        <a href="#" class="text-green-600 hover:underline font-semibold">
-          Baca Selengkapnya
-        </a>
+        <a href="#" class="text-green-500 font-semibold">Baca Artikel →</a>
       </div>
 
-      <!-- ARTICLE 2 -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <img src="https://picsum.photos/300/200?random=63" class="rounded mb-4">
-        <h3 class="text-xl font-semibold mb-2">
-          Manfaat Ikut Bootcamp Digital
-        </h3>
-        <p class="mb-4 text-gray-700">
-          Bootcamp menjadi pilihan tepat untuk meningkatkan skill
-          digital secara cepat, terarah, dan praktis.
+      <div class="bg-gray-900 rounded-xl p-6 hover:shadow-xl hover:scale-[1.02] transition">
+        <img src="https://picsum.photos/300/200?random=63" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Manfaat Bootcamp Digital</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          Solusi cepat upgrade skill digital secara terarah.
         </p>
-        <a href="#" class="text-green-600 hover:underline font-semibold">
-          Baca Selengkapnya
-        </a>
+        <a href="#" class="text-green-500 font-semibold">Baca Artikel →</a>
       </div>
 
-      <!-- ARTICLE 3 -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <img src="https://picsum.photos/300/200?random=64" class="rounded mb-4">
-        <h3 class="text-xl font-semibold mb-2">
-          Event Digital yang Wajib Diikuti
-        </h3>
-        <p class="mb-4 text-gray-700">
-          Rekomendasi event dan workshop digital yang bisa
-          memperluas relasi serta menambah pengalaman.
+      <div class="bg-gray-900 rounded-xl p-6 hover:shadow-xl hover:scale-[1.02] transition">
+        <img src="https://picsum.photos/300/200?random=64" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Event Digital Wajib</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          Event & workshop digital untuk relasi dan pengalaman.
         </p>
-        <a href="#" class="text-green-600 hover:underline font-semibold">
-          Baca Selengkapnya
-        </a>
+        <a href="#" class="text-green-500 font-semibold">Baca Artikel →</a>
       </div>
 
-      <!-- ARTICLE 4 -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <img src="https://picsum.photos/300/200?random=65" class="rounded mb-4">
-        <h3 class="text-xl font-semibold mb-2">
-          Strategi Belajar yang Efektif
-        </h3>
-        <p class="mb-4 text-gray-700">
-          Tips mengatur waktu, fokus, dan metode belajar
-          agar hasil yang didapat lebih maksimal.
+      <div class="bg-gray-900 rounded-xl p-6 hover:shadow-xl hover:scale-[1.02] transition">
+        <img src="https://picsum.photos/300/200?random=65" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Strategi Belajar Efektif</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          Cara belajar konsisten & fokus hasil maksimal.
         </p>
-        <a href="#" class="text-green-600 hover:underline font-semibold">
-          Baca Selengkapnya
-        </a>
+        <a href="#" class="text-green-500 font-semibold">Baca Artikel →</a>
       </div>
 
-      <!-- ARTICLE 5 -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <img src="https://picsum.photos/300/200?random=66" class="rounded mb-4">
-        <h3 class="text-xl font-semibold mb-2">
-          Tren Teknologi Tahun 2026
-        </h3>
-        <p class="mb-4 text-gray-700">
-          Mengenal tren teknologi terbaru yang diprediksi
-          akan mendominasi dunia digital di tahun 2026.
+      <div class="bg-gray-900 rounded-xl p-6 hover:shadow-xl hover:scale-[1.02] transition">
+        <img src="https://picsum.photos/300/200?random=66" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Tren Teknologi 2026</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          Prediksi teknologi yang akan mendominasi.
         </p>
-        <a href="#" class="text-green-600 hover:underline font-semibold">
-          Baca Selengkapnya
-        </a>
+        <a href="#" class="text-green-500 font-semibold">Baca Artikel →</a>
       </div>
 
-      <!-- ARTICLE 6 -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <img src="https://picsum.photos/300/200?random=67" class="rounded mb-4">
-        <h3 class="text-xl font-semibold mb-2">
-          Pentingnya Konsultasi Sebelum Project
-        </h3>
-        <p class="mb-4 text-gray-700">
-          Konsultasi membantu menentukan strategi dan
-          menghindari kesalahan sebelum memulai project.
+      <div class="bg-gray-900 rounded-xl p-6 hover:shadow-xl hover:scale-[1.02] transition">
+        <img src="https://picsum.photos/300/200?random=67" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Pentingnya Konsultasi</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          Hindari kesalahan sebelum memulai project.
         </p>
-        <a href="#" class="text-green-600 hover:underline font-semibold">
-          Baca Selengkapnya
-        </a>
+        <a href="#" class="text-green-500 font-semibold">Baca Artikel →</a>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="py-16 bg-green-600 text-white text-center">
-  <h2 class="text-3xl font-bold mb-4">
-    Jangan Lewatkan Artikel Terbaru
+<!-- CTA (SAMA PERSIS FEEL INDEX) -->
+<section class="py-20 bg-gradient-to-r from-green-600 to-green-700 text-white text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">
+    Jangan Lewatkan Insight Digital
   </h2>
-  <p class="mb-6">
-    Dapatkan insight dan update seputar dunia digital bersama WebsiteKami
+  <p class="mb-8 text-white/90 text-lg">
+    Update skill & wawasan digital langsung dari WebsiteKami
   </p>
-  <a href="kontak.html" class="bg-green-500 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold">
-    Hubungi Kami
-  </a>
+
+  <div class="flex justify-center gap-4 flex-wrap">
+    <a href="kontak.html" class="bg-white text-green-700 px-8 py-3 rounded-xl font-semibold shadow-lg">
+      Hubungi Kami
+    </a>
+    <a href="index.html#artikel" class="border border-white px-8 py-3 rounded-xl font-semibold">
+      Ke Homepage
+    </a>
+  </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-gray-800 text-white py-8 text-center">
-  <p>© 2026 WebsiteKami. All rights reserved.</p>
-</footer>
+<footer class="bg-black text-gray-400 pt-20 pb-10">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
 
-</body>
-</html>
+    <!-- Brand -->
+    <div>
+      <h3 class="text-xl font-bold text-green-500 mb-4">WebsiteKami</h3>
+      <p class="text-sm mb-6">
+        Solusi digital untuk pelajar, UMKM, dan personal brand.
+      </p>
+
+      <form class="flex bg-gray-900 rounded-full overflow-hidden">
+        <input type="email" placeholder="Email address"
+               class="bg-transparent px-4 py-2 text-sm w-full outline-none">
+        <button class="bg-green-600 px-5 text-white text-sm font-semibold">
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+    <!-- Pages -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Pages</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="about.html" class="hover:text-green-500">About</a></li>
+        <li><a href="blog.html" class="hover:text-green-500">Blog</a></li>
+        <li><a href="layanan.html" class="hover:text-green-500">Services</a></li>
+        <li><a href="kontak.html" class="hover:text-green-500">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Services</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Web Development</li>
+        <li>Digital Marketing</li>
+        <li>Personal Branding</li>
+        <li>Content Strategy</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Contact</h4>
+      <p class="text-sm mb-2">hello@websitekami.com</p>
+      <p class="text-sm mb-4">+62 812-3456-7890</p>
+
+      <div class="flex gap-4 text-lg">
+        <a href="#" class="hover:text-green-500">🌐</a>
+        <a href="#" class="hover:text-green-500">📘</a>
+        <a href="#" class="hover:text-green-500">📸</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="border-t border-white/10 mt-16 pt-6 text-center text-sm">
+    © 2026 WebsiteKami. All rights reserved.
+  </div>
+</footer>
